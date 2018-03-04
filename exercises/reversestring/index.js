@@ -38,6 +38,8 @@
 
 //Condensed
 function reverse(str) {
+    // debugger;
     return str.split('').reduce((output, i) =>  i + output, '');
 }
+// reverse('abcd');
 module.exports = reverse;
