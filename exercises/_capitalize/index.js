@@ -9,8 +9,7 @@
 
 // Initial Attempt
 function capitalize(str) {
-    let output = [];
-    output[0] = str[0].toUpperCase();
+    let output = str[0].toUpperCase();
     for (let i = 0; i < str.length - 1; i++) {
       if (str[i] == ' ') output[i+1] = str[i+1].toUpperCase(); 
       else output[i+1] = str[i+1]; 

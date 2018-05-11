@@ -8,13 +8,18 @@
 // Example:
 //   fib(4) === 3
 
+
+// Recursive method with fib(0) and fib(1) base cases
 function fib(n) {
-    // so fib(2) = fib(1) + fib(0)
-    // fib(0) = 0 && fib(1) = 1
-    // recursion with fib(0) and fib(1) base cases
     if (n==1) { return 1 }
     if (n==0) { return 0 }
     return fib(n-1) + fib(n-2);
+}
+
+// Memorization / DP method
+function fib(n) {
+    let cache = {};
+    return 
 }
 
 module.exports = fib;
